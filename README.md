@@ -32,6 +32,11 @@ Use terraform output for instructions on how to connect with HTTP and SSH.
 terraform output
 ```
 
+Destroy resources
+```
+terraform destroy -auto-approve
+```
+
 # Sample output
 ```
 $ terraform output
