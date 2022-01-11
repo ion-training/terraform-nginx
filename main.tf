@@ -159,7 +159,7 @@ resource "aws_instance" "web" {
   EOF
 }
 
-output "connect_url" {
+output "connect_URL" {
   description = "connect on bellow URL on port 80"
   value       = "http://${aws_instance.web.public_dns}"
 }
