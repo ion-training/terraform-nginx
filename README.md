@@ -14,7 +14,10 @@ Add your AWS credentials as two environment variables:
 export AWS_ACCESS_KEY_ID=<YOUR_ACCESS_KEY>
 export AWS_SECRET_ACCESS_KEY=<YOUR_SECRET_KEY>
 ```
-
+Terraform init
+```
+terraform init
+```
 Create resources
 ```
 terraform apply -auto-approve
