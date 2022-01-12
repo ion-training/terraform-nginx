@@ -155,6 +155,7 @@ resource "aws_instance" "web" {
 
   user_data = <<-EOF
   #!/bin/bash
+    sudo apt-get update
     sudo apt-get install -y nginx
   EOF
 }
