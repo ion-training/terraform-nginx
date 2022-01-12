@@ -5,8 +5,13 @@ terraform provision nginx/ubuntu on aws
 ![](./screenshots/2022-01-11-21-58-29.png)
 
 # How to use this repo
+Clone
 ```
-git clone git@github.com:ion-training/terraform-nginx.git && cd terraform-nginx
+git clone git@github.com:ion-training/terraform-nginx.git
+```
+Cd into the new directory
+```
+cd terraform-nginx
 ```
 
 Add your AWS credentials as two environment variables:
