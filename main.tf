@@ -154,7 +154,7 @@ resource "aws_instance" "web" {
   ]
 
   user_data = <<-EOF
-  #!/bin/bash
+    #!/bin/bash
     export DEBIAN_FRONTEND=noninteractive
     sudo apt-get update
     sudo apt-get install -y nginx
