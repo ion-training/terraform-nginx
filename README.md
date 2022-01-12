@@ -28,10 +28,6 @@ Create resources
 terraform apply -auto-approve
 ```
 
-Variables that can be changed:
-- region - defaults to eu-north-1a
-- prefix_name - defaults to "ion" used to prefix tags
-
 Use terraform output for instructions on how to connect with HTTP and SSH.
 ```
 terraform output
@@ -40,6 +36,18 @@ terraform output
 Destroy resources
 ```
 terraform destroy -auto-approve
+```
+
+# How to change variables region and prefix_name used for tags
+To use "eu-central-1" region and "testing" as prefix
+```
+terraform apply -var="region=eu-central-1" -var="prefix_name=testing" -auto-approve
+```
+
+Defaults for variables:
+```
+region="eu-north-1"
+prefix_name="ion"
 ```
 
 # Sample output
